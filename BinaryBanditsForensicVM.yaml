@@ -1,7 +1,7 @@
 apt:
   sources:
     dotnet_backports:
-      source: deb [arch="arm64"] https://ppa.launchpadcontent.net/dotnet/backports/ubuntu/ $RELEASE main
+      source: deb [arch="arm64","amd64"] https://ppa.launchpadcontent.net/dotnet/backports/ubuntu/ $RELEASE main
       key: |
         -----BEGIN PGP PUBLIC KEY BLOCK-----
         
@@ -80,7 +80,7 @@ runcmd:
  - sudo -u ubuntu mkdir mkdir /home/ubuntu/ewfmount
  - sudo -u ubuntu mkdir mkdir /home/ubuntu/evidence
  - sudo -u ubuntu mkdir mkdir /home/ubuntu/tools
- - sudo -u ubuntu arch=$(uname -m) && filename=$( [ "$arch" == "x86_64" ] && echo "EZTools_x86_64-20240630.tar.gz" || ( [ "$arch" == "aarch64" ] && echo "EZTools_aarch64-20240630.tar.gz" ) ) && [ -z "$filename" ] && echo "Unsupported architecture: $arch" && exit 1 || wget -qO- "https://raw.githubusercontent.com/0CM/BinaryBanditsForensicVM/main/$filename" | tar -xz -C $HOME/tools/
+ - sudo -u ubuntu sh -c 'arch=$(uname -m) && wget -qO- "https://raw.githubusercontent.com/0CM/BinaryBanditsForensicVM/main/EZTools_${arch}-20240630.tar.gz" | tar -xz -C $HOME/tools/'
  
 write_files:
   - path: /home/ubuntu/.bashrc
