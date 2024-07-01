@@ -80,7 +80,7 @@ runcmd:
  - sudo -u ubuntu mkdir mkdir /home/ubuntu/ewfmount
  - sudo -u ubuntu mkdir mkdir /home/ubuntu/evidence
  - sudo -u ubuntu mkdir mkdir /home/ubuntu/tools
- - sudo -u ubuntu wget -qO- https://raw.githubusercontent.com/0CM/BinaryBanditsForensicVM/main/EZTools_aarch64-20240630.tar.gz | tar -xz -C /home/ubuntu/tools/
+ - sudo -u ubuntu arch=$(uname -m) && filename=$( [ "$arch" == "x86_64" ] && echo "EZTools_x86_64-20240630.tar.gz" || ( [ "$arch" == "aarch64" ] && echo "EZTools_aarch64-20240630.tar.gz" ) ) && [ -z "$filename" ] && echo "Unsupported architecture: $arch" && exit 1 || wget -qO- "https://raw.githubusercontent.com/0CM/BinaryBanditsForensicVM/main/$filename" | tar -xz -C $HOME/tools/
  
 write_files:
   - path: /home/ubuntu/.bashrc
