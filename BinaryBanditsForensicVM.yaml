@@ -71,13 +71,20 @@ packages:
   - unar
   - libvshadow-utils
   - dotnet-runtime-6.0
+  - python3.12-venv
+  - python3-pip
 
 runcmd:
  - sudo -u ubuntu mkdir /home/ubuntu/DATA
  - sudo -u ubuntu mkdir mkdir /home/ubuntu/ewfmount
  - sudo -u ubuntu mkdir mkdir /home/ubuntu/evidence
  - sudo -u ubuntu mkdir mkdir /home/ubuntu/tools
+ - sudo -u ubuntu mkdir mkdir /home/ubuntu/tools/memprocfs
  - sudo -u ubuntu sh -c 'arch=$(uname -m) && wget -qO- "https://raw.githubusercontent.com/0CM/BinaryBanditsForensicVM/main/EZTools_${arch}-20240630.tar.gz" | tar -xz -C $HOME/tools/'
+ - sudo -u ubuntu wget -qO- https://github.com/ufrisk/MemProcFS/releases/download/v5.9/MemProcFS_files_and_binaries_v5.9.18-linux_aarch64-20240613.tar.gz| tar -xz -C $HOME/tools/memprocfs 
+ - sudo -u ubuntu python3 -m venv /home/ubuntu/pyapps
+ - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install peepdf-3,pdfid,oletools
+ - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install https://github.com/msuhanov/dfir_ntfs/archive/1.1.18.tar.gz
  
 write_files:
   - path: /home/ubuntu/.bashrc
@@ -94,5 +101,8 @@ write_files:
         alias rbcmd="/home/ubuntu/tools/EZTools/RBCmd/RBCmd"
         alias recmd="/home/ubuntu/tools/EZTools/RECmd/RECmd"
         alias srumecmd="/home/ubuntu/tools/EZTools/SrumECmd/SrumECmd"
+        alias pyapps="source $HOME/pyapps/bin/activate"
+        alias peepdf="source $HOME/pyapps/bin/activate&&peepdf"
+        alias pdfid="source $HOME/pyapps/bin/activate&&pdfid"
     append: true
     defer: true
