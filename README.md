@@ -38,15 +38,17 @@ Forensics Tools:
 	```
 	* **peepdf** - <https://github.com/jesparza/peepdf>
 		  - Tool to explore PDF files, it can parse different versions of a file,
-			  object streams and encrypted files.
-	* **pdfid** - <https://github.com/DidierStevens/DidierStevensSuite/blob/master/pdfid.py>
+			object streams and encrypted files.
+	* **pdfid** - <https://github.com/DidierStevens>
 		  - Didier Stevens’s tool to test a PDF file
 	* **dfir\_ntfs** - <https://github.com/msuhanov/dfir_ntfs>
 		  - an NTFS/FAT parser for digital forensics & incident response
 	* **oletools** - <https://github.com/decalage2/oletools>
-		  - oletools is a package of python tools to analyze Microsoft OLE2 files (also called     Structured Storage, Compound File Binary Format or Compound Document File Format), such as Microsoft Office 97-2003 documents
+		  - oletools is a package of python tools to analyze Microsoft OLE2 files
 	* **ExeSpy** - <https://github.com/andyjsmith/Exe-Spy>
-		  - ExeSpy is a free, open-source cross-platform Windows PE file viewer. It supports all valid PE formats, including EXE, DLL, COM, OCX, SYS, SCR, CPL, AX, ACM, WINMD, MUI, EFI, TSP, and DRV.
+		  - ExeSpy is a free, open-source cross-platform Windows PE file viewer. 
+		    It supports all valid PE formats, including EXE, DLL, COM, OCX, SYS, 
+		    SCR, CPL, AX, ACM, WINMD, MUI, EFI, TSP, and DRV.
 	```
 **Linux packages**:
 -------------------
@@ -80,7 +82,8 @@ Forensics Tools:
 	* **galleta**
 	  - Internet Explorer cookie forensic analysis tool
 	* **getxattr**
-	  - getxattr() retrieves the value of the extended attribute identified by name and associated with the given path in the file system.
+	  - getxattr() retrieves the value of the extended attribute identified 
+	     by name and associated with the given path in the file system.
 	* **hashdeep**
 	  - recursively compute hashsums or piecewise hashings
 	* **pff-tools**
@@ -102,7 +105,9 @@ Forensics Tools:
 	* **libimage-exiftool-perl**
 	  - Exiftool - program to read and write meta information in multimedia files
 	* **unblob**
-	  - unblob is an accurate, fast, and easy-to-use extraction suite. It parses unknown binary blobs for more than 30 different archive, compression, and file-system formats, extracts their content recursively.
+	  - unblob is an accurate, fast, and easy-to-use extraction suite. It parses unknown
+	    binary blobs for more than 30 different archive, compression, and file-system 
+	    formats, extracts their content recursively.
 	* **binvis**
 	  - project to visualize binary-file structures in unique ways
 	* **testdisk**
@@ -132,5 +137,7 @@ Forensics Tools:
 	* **tesseract-ocr**
 	  - Tesseract 4 adds a new neural net (LSTM) based OCR engine.
 	* **readpe**
-	  - readpe is a toolkit designed to analyze Microsoft Windows PE (Portable Executable) binary files. Its tools can parse and compare PE32/PE32+ executable files (EXE, DLL, OCX, etc), and analyze them in search of suspicious characteristics.
+	  - readpe is a toolkit designed to analyze Microsoft Windows PE (Portable Executable)
+	    binary files. Its tools can parse and compare PE32/PE32+ executable files (EXE, 
+	    DLL, OCX, etc), and analyze them in search of suspicious characteristics.
 	```
