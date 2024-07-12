@@ -1,5 +1,5 @@
-##Ubuntu Linux VM for Digital Forensics##
-
+Ubuntu Linux VM for Digital Forensics
+----------------
 
 Prerequisites:
 ---------------
@@ -15,7 +15,7 @@ OR
 Forensics Tools:
 ----------------
 
-* EZTools - [https://ericzimmerman.github.io/\#!index.md](https://ericzimmerman.github.io/#!index.md)
+* **EZTools** - [https://ericzimmerman.github.io/\#!index.md](https://ericzimmerman.github.io/#!index.md)
   * **JLECmd** version 1.5.0.0 - Jump List parser
   * **EvtxECmd** version 1.5.0.0 - Event log (evtx) parser
   * **LECmd** version 1.5.0.0 -  Lnk file parser
@@ -29,7 +29,7 @@ Forensics Tools:
   * **WxTCmd** version 1.0.0.0
   * **bstrings** version 1.5.2.0
 
-* SIDR - (<https://github.com/strozfriedberg/sidr)>
+* **SIDR** - (<https://github.com/strozfriedberg/sidr)>
   * SIDR (Search Index DB Reporter) is a Rust-based tool designed to parse Windows search artifacts from Windows 10 (and prior) and Windows 11 systems.
 
 **Python libs and tools:**
