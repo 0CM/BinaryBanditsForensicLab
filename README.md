@@ -1,10 +1,10 @@
-Ubuntu Linux VM for Digital Forensics
+##Ubuntu Linux VM for Digital Forensics##
 
 
 Prerequisites:
 ---------------
 
-**CPU Arch ARM / Apple Silicon\* **
+**CPU Arch ARM / Apple Silicon\**
 
 **Multipass**   -> brew install multipass 
 OR
@@ -36,7 +36,7 @@ Forensics Tools:
 **Python libs and tools:**
 --------------------------
 * **peepdf** - <https://github.com/jesparza/peepdf>
-	  - Tool to explore PDF files, it can parse different versions of a file,
+	 - Tool to explore PDF files, it can parse different versions of a file,
 		object streams and encrypted files.
 * **pdfid** - <https://github.com/DidierStevens>
 	  - Didier Stevens’s tool to test a PDF file
@@ -51,90 +51,90 @@ Forensics Tools:
 
 **Linux packages**:
 -------------------
-	* **aeskeyfind**
+* **aeskeyfind**
 	  - tool for locating AES keys in a captured memory image
-	* **afflib-tools**
+* **afflib-tools**
 	  - Advanced Forensics Format Library (utilities)
-	* **binwalk**
+* **binwalk**
 	  - tool library for analyzing binary blobs and executable code
-	* **cewl**
+* **cewl**
 	  - custom word list generator
-	* **dc3dd**
+* **dc3dd**
 	  - patched version of GNU dd with forensic features
-	* **dislocker**
+* **dislocker**
 	  - read/write encrypted BitLocker volumes
-	* **dnsrecon**
+* **dnsrecon**
 	  - DNS enumeration script
-	* **ewf-tools**
+* **ewf-tools**
 	  - collection of tools for reading and writing EWF (E01) files
-	* **exifprobe**
+* **exifprobe**
 	  - read metadata from digital pictures
-	* **extundelete**
+* **extundelete**
 	  - utility to recover deleted files from ext3/ext4 partition
-	* **fcrackzip**
+* **fcrackzip**
 	  - password cracker for zip archives
-	* **forensic-artifacts**
+* **forensic-artifacts**
 	  - knowledge base of forensic artifacts (data files)
-	* **forensics-colorize**
+* **forensics-colorize**
 	  - show differences between files using color graphics
-	* **galleta**
+* **galleta**
 	  - Internet Explorer cookie forensic analysis tool
-	* **getxattr**
+* **getxattr**
 	  - getxattr() retrieves the value of the extended attribute identified 
 	     by name and associated with the given path in the file system.
-	* **hashdeep**
+* **hashdeep**
 	  - recursively compute hashsums or piecewise hashings
-	* **pff-tools**
+* **pff-tools**
 	  - utilities for MS Outlook PAB, PST and OST files
-	* **mc**
+* **mc**
 	  - MidnightCommander File Manager
-	* **recoverdm**
+* **recoverdm**
 	  - recover files on disks with damaged sectors
-	* **scrounge-ntfs**
+* **scrounge-ntfs**
 	  - Data recovery program for NTFS filesystems
-	* **sleuthkit**
+* **sleuthkit**
 	  - tools for forensics analysis on volume and filesystem data
-	* **ssdeep**
+* **ssdeep**
 	  - recursive piecewise hashing tool
-	* **yara**
+* **yara**
 	  - Pattern matching swiss knife for malware researchers
-	* **ext3grep**
+* **ext3grep**
 	  - tool to help recover deleted files on ext3 filesystems
-	* **libimage-exiftool-perl**
+* **libimage-exiftool-perl**
 	  - Exiftool - program to read and write meta information in multimedia files
-	* **unblob**
+* **unblob**
 	  - unblob is an accurate, fast, and easy-to-use extraction suite. It parses unknown
 	    binary blobs for more than 30 different archive, compression, and file-system 
 	    formats, extracts their content recursively.
-	* **binvis**
+* **binvis**
 	  - project to visualize binary-file structures in unique ways
-	* **testdisk**
+* **testdisk**
 	  - partition scanner and disk recovery tool, and PhotoRec file recovery tool
-	* **chntpw**
+* **chntpw**
 	  - NT SAM password recovery utility
-	* **geoip-bin**
+* **geoip-bin**
 	  - IP lookup command line tools that use the GeoIP library
-	* **mblaze**
+* **mblaze**
 	  - UNIX utilities to deal with Maildir
-	* **mboxgrep**
+* **mboxgrep**
 	  - grep through mailboxes
-	* **pev**
+* **pev**
 	  - text-based tool to analyze PE files
-	* **tshark**
+* **tshark**
 	  - network traffic analyzer - console version
-	* **unar**
+* **unar**
 	  - unarchiver for a variety of file formats
-	* **libvshadow-utils**
+* **libvshadow-utils**
 	  - libvshadow is a library to access the Volume Shadow Snapshot (VSS) format.
-	* **dotnet-runtime-6.0**
+* **dotnet-runtime-6.0**
 	  - .NET runtime v 6.0 for Linux
-	* **python3.12-venv**
+* **python3.12-venv**
 	  - Python Virtual Environments
-	* **python3-pip**
+* **python3-pip**
 	  - package installer for Python.
-	* **tesseract-ocr**
+* **tesseract-ocr**
 	  - Tesseract 4 adds a new neural net (LSTM) based OCR engine.
-	* **readpe**
+* **readpe**
 	  - readpe is a toolkit designed to analyze Microsoft Windows PE (Portable Executable)
 	    binary files. Its tools can parse and compare PE32/PE32+ executable files (EXE, 
 	    DLL, OCX, etc), and analyze them in search of suspicious characteristics.
