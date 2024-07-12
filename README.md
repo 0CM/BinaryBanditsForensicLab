@@ -35,7 +35,6 @@ Forensics Tools:
 
 **Python libs and tools:**
 --------------------------
-	```
 	* **peepdf** - <https://github.com/jesparza/peepdf>
 		  - Tool to explore PDF files, it can parse different versions of a file,
 			object streams and encrypted files.
@@ -49,10 +48,9 @@ Forensics Tools:
 		  - ExeSpy is a free, open-source cross-platform Windows PE file viewer. 
 		    It supports all valid PE formats, including EXE, DLL, COM, OCX, SYS, 
 		    SCR, CPL, AX, ACM, WINMD, MUI, EFI, TSP, and DRV.
-	```
+
 **Linux packages**:
 -------------------
-	```
 	* **aeskeyfind**
 	  - tool for locating AES keys in a captured memory image
 	* **afflib-tools**
@@ -140,4 +138,3 @@ Forensics Tools:
 	  - readpe is a toolkit designed to analyze Microsoft Windows PE (Portable Executable)
 	    binary files. Its tools can parse and compare PE32/PE32+ executable files (EXE, 
 	    DLL, OCX, etc), and analyze them in search of suspicious characteristics.
-	```
