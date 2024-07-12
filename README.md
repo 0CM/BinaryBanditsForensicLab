@@ -35,19 +35,19 @@ Forensics Tools:
 
 **Python libs and tools:**
 --------------------------
-	* **peepdf** - <https://github.com/jesparza/peepdf>
-		  - Tool to explore PDF files, it can parse different versions of a file,
-			object streams and encrypted files.
-	* **pdfid** - <https://github.com/DidierStevens>
-		  - Didier Stevens’s tool to test a PDF file
-	* **dfir\_ntfs** - <https://github.com/msuhanov/dfir_ntfs>
-		  - an NTFS/FAT parser for digital forensics & incident response
-	* **oletools** - <https://github.com/decalage2/oletools>
-		  - oletools is a package of python tools to analyze Microsoft OLE2 files
-	* **ExeSpy** - <https://github.com/andyjsmith/Exe-Spy>
-		  - ExeSpy is a free, open-source cross-platform Windows PE file viewer. 
-		    It supports all valid PE formats, including EXE, DLL, COM, OCX, SYS, 
-		    SCR, CPL, AX, ACM, WINMD, MUI, EFI, TSP, and DRV.
+* **peepdf** - <https://github.com/jesparza/peepdf>
+	  - Tool to explore PDF files, it can parse different versions of a file,
+		object streams and encrypted files.
+* **pdfid** - <https://github.com/DidierStevens>
+	  - Didier Stevens’s tool to test a PDF file
+* **dfir\_ntfs** - <https://github.com/msuhanov/dfir_ntfs>
+	  - an NTFS/FAT parser for digital forensics & incident response
+* **oletools** - <https://github.com/decalage2/oletools>
+	  - oletools is a package of python tools to analyze Microsoft OLE2 files
+* **ExeSpy** - <https://github.com/andyjsmith/Exe-Spy>
+      - ExeSpy is a free, open-source cross-platform Windows PE file viewer. 
+      It supports all valid PE formats, including EXE, DLL, COM, OCX, SYS, 
+      SCR, CPL, AX, ACM, WINMD, MUI, EFI, TSP, and DRV.
 
 **Linux packages**:
 -------------------
