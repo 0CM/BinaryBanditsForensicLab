@@ -86,7 +86,7 @@ runcmd:
  - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicVM/raw/main/packages/sidr_aarch64-20240702.tar.gz| tar -xz -C $HOME/tools/'
  - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/ufrisk/MemProcFS/releases/download/v5.9/MemProcFS_files_and_binaries_v5.9.18-linux_aarch64-20240613.tar.gz| tar -xz -C $HOME/tools/memprocfs' 
  - sudo -u ubuntu python3 -m venv /home/ubuntu/pyapps
- - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install peepdf-3 pdfid oletools pdftextract exespy
+ - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install peepdf-3 pdfid oletools pdftextract
  - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install https://github.com/msuhanov/dfir_ntfs/archive/1.1.18.tar.gz
  
 write_files:
