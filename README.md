@@ -16,20 +16,19 @@ Forensics Tools:
 ----------------
 
 * EZTools - [https://ericzimmerman.github.io/\#!index.md](https://ericzimmerman.github.io/#!index.md)
-	```
-	  * JLECmd version 1.5.0.0 - Jump List parser
-	  * EvtxECmd version 1.5.0.0 - Event log (evtx) parser
-	  * LECmd version 1.5.0.0 -  Lnk file parser
-	  * MFTECmd version 1.2.2.1 - $MFT, $Boot, $J, $SDS, $I30 parser
-	  * RBCmd version 1.5.0.0 - Recycle Bin artifact (INFO2/$I) parser
-	  * RECmd version 2.0.0.0 - Command line Registry tool 
-	  * rla version 2.0.0.0 - Replay transaction logs and update Registry hives 
-	  * RecentFileCacheParser version 1.5.0.0
-	  * SQLECmd version 1.0.0.0
-	  * SrumECmd version 0.5.1.0
-	  * WxTCmd version 1.0.0.0
-	  * bstrings version 1.5.2.0
-	```
+  * **JLECmd** version 1.5.0.0 - Jump List parser
+  * **EvtxECmd** version 1.5.0.0 - Event log (evtx) parser
+  * **LECmd** version 1.5.0.0 -  Lnk file parser
+  * **MFTECmd** version 1.2.2.1 - $MFT, $Boot, $J, $SDS, $I30 parser
+  * **RBCmd** version 1.5.0.0 - Recycle Bin artifact (INFO2/$I) parser
+  * **RECmd** version 2.0.0.0 - Command line Registry tool 
+  * **rla** version 2.0.0.0 - Replay transaction logs and update Registry hives 
+  * **RecentFileCacheParser** version 1.5.0.0
+  * **SQLECmd** version 1.0.0.0
+  * **SrumECmd** version 0.5.1.0
+  * **WxTCmd** version 1.0.0.0
+  * **bstrings** version 1.5.2.0
+
 * SIDR - (<https://github.com/strozfriedberg/sidr)>
   * SIDR (Search Index DB Reporter) is a Rust-based tool designed to parse Windows search artifacts from Windows 10 (and prior) and Windows 11 systems.
 
