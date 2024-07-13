@@ -98,6 +98,7 @@ runcmd:
  - sudo -u ubuntu python3 -m venv /home/ubuntu/pyapps
  - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install peepdf-3 pdfid oletools pdftextract
  - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install https://github.com/msuhanov/dfir_ntfs/archive/1.1.18.tar.gz
+ - sudo -u ubuntu chmod a+x /home/ubuntu/tools/hayabusa/hayabusa-2.16.0-lin-aarch64-gnu
  
 write_files:
   - path: /home/ubuntu/.bashrc
