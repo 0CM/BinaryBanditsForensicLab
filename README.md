@@ -32,6 +32,28 @@ Forensics Tools:
 * **SIDR** - (<https://github.com/strozfriedberg/sidr)>
   * SIDR (Search Index DB Reporter) is a Rust-based tool designed to parse Windows search artifacts from Windows 10 (and prior) and Windows 11 systems.
 
+**SIGMA and YARA Scanners:**
+--------------------------
+* **Chainsaw** - <https://github.com/WithSecureLabs/chainsaw>
+	 - Chainsaw offers a generic and fast method of searching through event logs
+	   for keywords, and by identifying threats using built-in support for Sigma 
+	   detection rules, and via custom Chainsaw detection rules.
+		
+* **Hayabusa** - <https://github.com/Yamato-Security/hayabusa>
+	 - Hayabusa is a Windows event log fast forensics timeline generator
+	   and threat hunting tool created by the Yamato Security.
+
+
+**Sensitive Data and Secrets Scanners:**
+--------------------------
+* **Nosey Parker** - <https://github.com/praetorian-inc/noseyparker>
+	 - Nosey Parker is a command-line program that finds secrets
+	   and sensitive information in textual data.
+	 
+* **Trufflehog** - <https://github.com/trufflesecurity/trufflehog>
+	 - TruffleHog is an open-source secret scanning engine that detects
+	   and helps resolve exposed secrets across your entire tech stack.
+
 **Python libs and tools:**
 --------------------------
 * **peepdf** - <https://github.com/jesparza/peepdf>
