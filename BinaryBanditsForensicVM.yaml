@@ -96,9 +96,11 @@ runcmd:
  - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicVM/raw/main/packages/chainsaw_aarch64-20240713.tar.gz| tar -xz -C $HOME/tools/'
  - sudo -u ubuntu sh -c 'git clone https://github.com/SigmaHQ/sigma $HOME/tools/chainsaw/sigma'
  - sudo -u ubuntu python3 -m venv /home/ubuntu/pyapps
- - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install peepdf-3 pdfid oletools pdftextract
+ - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install peepdf-3 pdfid oletools pdftextract pyhindsight
  - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install https://github.com/msuhanov/dfir_ntfs/archive/1.1.18.tar.gz
- - sudo -u ubuntu chmod a+x /home/ubuntu/tools/hayabusa/hayabusa-2.16.0-lin-aarch64-gnu
+ - sudo -u ubuntu chmod 755 /home/ubuntu/tools/hayabusa/hayabusa-2.16.0-lin-aarch64-gnu
+ - sudo -u ubuntu chmod 755 /home/ubuntu/pyapps/bin/hindsight.py
+ - sudo -u ubuntu chmod 755 /home/ubuntu/pyapps/bin/hindsight_gui.py
  
 write_files:
   - path: /home/ubuntu/.bashrc
@@ -119,6 +121,7 @@ write_files:
         alias sqlecmd="/home/ubuntu/tools/EZTools/SQLECmd/SQLECmd"
         alias wxtcmd="/home/ubuntu/tools/EZTools/WxTCmd/WxTCmd"
         alias rla="/home/ubuntu/tools/EZTools/rla/rla"
+        alias noseyparker="/home/ubuntu/tools/noseyparker/bin/noseyparker"
         alias pyapps="source $HOME/pyapps/bin/activate"
         alias peepdf="source $HOME/pyapps/bin/activate&&peepdf"
         alias pdfid="source $HOME/pyapps/bin/activate&&pdfid"
@@ -126,5 +129,7 @@ write_files:
         alias exespy="source $HOME/pyapps/bin/activate&&exespy"
         alias fat_parser="source $HOME/pyapps/bin/activate&&fat_parser"
         alias ntfs_parser="source $HOME/pyapps/bin/activate&&ntfs_parser"
+        alias hindsight="source $HOME/pyapps/bin/activate&&hindsight.py"
+        alias hindsight_gui="source $HOME/pyapps/bin/activate&&hindsight_gui.py"
     append: true
     defer: true

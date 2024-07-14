@@ -1,6 +1,9 @@
 Ubuntu Linux VM for Digital Forensics
 ----------------
 
+
+
+
 Prerequisites:
 ---------------
 
@@ -54,7 +57,7 @@ Forensics Tools:
 	 - TruffleHog is an open-source secret scanning engine that detects
 	   and helps resolve exposed secrets across your entire tech stack.
 
-**Python libs and tools:**
+**Python Lbs and Tools:**
 --------------------------
 * **peepdf** - <https://github.com/jesparza/peepdf>
 	 - Tool to explore PDF files, it can parse different versions of a file,
@@ -65,8 +68,12 @@ Forensics Tools:
 	  - an NTFS/FAT parser for digital forensics & incident response
 * **oletools** - <https://github.com/decalage2/oletools>
 	  - oletools is a package of python tools to analyze Microsoft OLE2 files
+* **hindsight** - <https://github.com/obsidianforensics/hindsight>
+	  - web artefacts and browsing history from Chromium-based web browsers	  
+	  
+	  
 
-**Linux packages**:
+**Linux Packages**:
 -------------------
 * **aeskeyfind**
 	  - tool for locating AES keys in a captured memory image
