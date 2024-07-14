@@ -7,7 +7,7 @@ Ubuntu Linux VM for Digital Forensics
 Prerequisites:
 ---------------
 
-**CPU Arch ARM / Apple Silicon\**
+
 
 **Multipass**   -> brew install multipass 
 OR
@@ -33,9 +33,10 @@ Forensics Tools:
   * **bstrings** version 1.5.2.0
 
 * **SIDR** - (<https://github.com/strozfriedberg/sidr)>
-  * SIDR (Search Index DB Reporter) is a Rust-based tool designed to parse Windows search artifacts from Windows 10 (and prior) and Windows 11 systems.
+  * SIDR (Search Index DB Reporter) is a Rust-based tool designed to parse Windows 
+    search artifacts from Windows 10 (and prior) and Windows 11 systems.
 
-**SIGMA and YARA Scanners:**
+**SIGMA, YARA and IOC Scanners:**
 --------------------------
 * **Chainsaw** - <https://github.com/WithSecureLabs/chainsaw>
 	 - Chainsaw offers a generic and fast method of searching through event logs
@@ -47,6 +48,8 @@ Forensics Tools:
 	   and threat hunting tool created by the Yamato Security.
 
 
+
+
 **Sensitive Data and Secrets Scanners:**
 --------------------------
 * **Nosey Parker** - <https://github.com/praetorian-inc/noseyparker>
@@ -56,12 +59,13 @@ Forensics Tools:
 * **Trufflehog** - <https://github.com/trufflesecurity/trufflehog>
 	 - TruffleHog is an open-source secret scanning engine that detects
 	   and helps resolve exposed secrets across your entire tech stack.
+ 
 
-**Python Lbs and Tools:**
+**Python Libs and Tools:**
 --------------------------
-* **peepdf** - <https://github.com/jesparza/peepdf>
-	 - Tool to explore PDF files, it can parse different versions of a file,
-		object streams and encrypted files.
+* **peepdf** - <https://github.com/jesparza/peepdf> 
+    - Tool to explore PDF files, it can parse different versions of a file,
+	object streams and encrypted files.
 * **pdfid** - <https://github.com/DidierStevens>
 	  - Didier Stevens’s tool to test a PDF file
 * **dfir\_ntfs** - <https://github.com/msuhanov/dfir_ntfs>
@@ -70,7 +74,6 @@ Forensics Tools:
 	  - oletools is a package of python tools to analyze Microsoft OLE2 files
 * **hindsight** - <https://github.com/obsidianforensics/hindsight>
 	  - web artefacts and browsing history from Chromium-based web browsers	  
-	  
 	  
 
 **Linux Packages**:
