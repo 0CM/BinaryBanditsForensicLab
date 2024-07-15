@@ -22,22 +22,27 @@ Lab Deployment:
 ----------------
 The following command will create VM called BanditLab with 2GB RAM and 15GB disk.
  - VM name and HW specs can be changes accordingly to you preferences 
-
- * multipass launch -n BanditLab -m 2GB -d 15G --cloud-init https://raw.githubusercontent.com/0CM/BinaryBanditsForensicLab/main/BanditLab.yaml
+```
+multipass launch -n BanditLab -m 2GB -d 15G --cloud-init https://raw.githubusercontent.com/0CM/BinaryBanditsForensicLab/main/BanditLab.yaml
+```
 
 Log into the VM:
- * multipass shell BanditLab
-
+```
+multipass shell BanditLab
+```
 Stop the VM:
- * multipass stop BanditLab
-
+```
+multipass stop BanditLab
+```
 Delete the VM:
- * multipass delete BanditLab
- * multipass purge
-
+```
+multipass delete BanditLab
+multipass purge
+```
 Share folder between the VM and host system:
- * multipass mount path/to/local/folder BanditLab:/home/ubuntu/DATA
-
+```
+multipass mount path/to/local/folder BanditLab:/home/ubuntu/DATA
+```
 Forensics Tools:
 ----------------
 
