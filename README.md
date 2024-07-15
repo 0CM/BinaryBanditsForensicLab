@@ -1,24 +1,47 @@
-Ubuntu Linux VM for Digital Forensics
+Ubuntu based Linux VM for Digital Forensics
 ----------------
+Lightweight linux distribution for digital forensic and incident response. 
+Primarily to be used on Apple Silicon or other ARM64 based systems.
 
-
-
+\* x86\_64 binaries will be ported later.
 
 Prerequisites:
 ---------------
+**Multipass**
 
+Ubuntu Multipass is a tool developed by Canonical that allows users to create, manage, 
+and configure lightweight virtual machines (VMs) on their local system, 
+specifically designed for Ubuntu environments.
 
+Installation:
 
-**Multipass**   -> brew install multipass 
-OR
-**Stand alone installer** -> <https://multipass.run/install>
+* via Brew -> brew install multipass 
+* via stand alone installer -> <https://multipass.run/install>
 
-\* x86\_64 binaries will be ported later, but at the moment ARM64 is primary focus of this lab deployment.
+Lab Deployment:
+----------------
+The following command will create VM called BanditLab with 2GB RAM and 15GB disk.
+ - VM name and HW specs can be changes accordingly to you preferences 
+
+ * multipass launch -n BanditLab -m 2GB -d 15G --cloud-init https://raw.githubusercontent.com/0CM/BinaryBanditsForensicLab/main/BanditLab.yaml
+
+Log into the VM:
+ * multipass shell BanditLab
+
+Stop the VM:
+ * multipass stop BanditLab
+
+Delete the VM:
+ * multipass delete BanditLab
+ * multipass purge
+
+Share folder between the VM and host system:
+ * multipass mount path/to/local/folder BanditLab:/home/ubuntu/DATA
 
 Forensics Tools:
 ----------------
 
-* **EZTools** - [https://ericzimmerman.github.io/\#!index.md](https://ericzimmerman.github.io/#!index.md)
+* **EZTools** - [Eric Zimmerman's tools](https://ericzimmerman.github.io/#!index.md)
   * **JLECmd** version 1.5.0.0 - Jump List parser
   * **EvtxECmd** version 1.5.0.0 - Event log (evtx) parser
   * **LECmd** version 1.5.0.0 -  Lnk file parser
@@ -46,9 +69,6 @@ Forensics Tools:
 * **Hayabusa** - <https://github.com/Yamato-Security/hayabusa>
 	 - Hayabusa is a Windows event log fast forensics timeline generator
 	   and threat hunting tool created by the Yamato Security.
-
-
-
 
 **Sensitive Data and Secrets Scanners:**
 --------------------------
@@ -147,6 +167,8 @@ Forensics Tools:
 	  - grep through mailboxes
 * **pev**
 	  - text-based tool to analyze PE files
+* **plaso**
+	  - super timeline all the things 
 * **tshark**
 	  - network traffic analyzer - console version
 * **unar**
@@ -158,10 +180,10 @@ Forensics Tools:
 * **python3.12-venv**
 	  - Python Virtual Environments
 * **python3-pip**
-	  - package installer for Python.
+	  - package installer for Python
 * **tesseract-ocr**
-	  - Tesseract 4 adds a new neural net (LSTM) based OCR engine.
+	  - Tesseract 4 adds a new neural net (LSTM) based OCR engine
 * **readpe**
 	  - readpe is a toolkit designed to analyze Microsoft Windows PE (Portable Executable)
 	    binary files. Its tools can parse and compare PE32/PE32+ executable files (EXE, 
-	    DLL, OCX, etc), and analyze them in search of suspicious characteristics.
+	    DLL, OCX, etc), and analyze them in search of suspicious characteristics
