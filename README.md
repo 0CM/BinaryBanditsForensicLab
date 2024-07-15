@@ -1,9 +1,11 @@
-Ubuntu based Linux VM for Digital Forensics
+BanditLab - Ubuntu based Linux VM for Digital Forensics
 ----------------
-Lightweight (cli only) Linux distribution for digital forensic and incident response. 
-Primarily to be used on Apple Silicon or other ARM64 based systems.
+It was supposed to be a lightweight Linux distribution for digital forensics
+and incident response, but it kind of spiraled out of control.
 
-\* x86\_64 binaries are going to be ported later.
+Primarily focused on the Apple Silicon or other ARM64 based systems.
+
+* x86_64 binaries will be ported later.
 
 Prerequisites:
 ---------------
@@ -20,8 +22,8 @@ Installation:
 
 Lab Deployment:
 ----------------
-The following command will create VM called BanditLab with 2GB RAM and 15GB disk.
- - VM name and HW specs can be changes accordingly to you preferences 
+The following command will create a VM named BanditLab with 2GB of RAM and a 15GB disk. 
+ - You can adjust the VM name and hardware specifications according to your preferences.
 ```
 multipass launch -n BanditLab -m 2GB -d 15G --cloud-init https://raw.githubusercontent.com/0CM/BinaryBanditsForensicLab/main/BanditLab.yaml
 ```
