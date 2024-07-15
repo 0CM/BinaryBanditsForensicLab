@@ -68,38 +68,38 @@ Forensics Tools:
 
 **SIGMA, YARA and IOC Scanners:**
 --------------------------
-* **Chainsaw** - <https://github.com/WithSecureLabs/chainsaw>
+* **Chainsaw** - [Github Repository](https://github.com/WithSecureLabs/chainsaw)
 	 - Chainsaw offers a generic and fast method of searching through event logs
 	   for keywords, and by identifying threats using built-in support for Sigma 
 	   detection rules, and via custom Chainsaw detection rules.
 		
-* **Hayabusa** - <https://github.com/Yamato-Security/hayabusa>
+* **Hayabusa** - [Github Repository](https://github.com/Yamato-Security/hayabusa)
 	 - Hayabusa is a Windows event log fast forensics timeline generator
 	   and threat hunting tool created by the Yamato Security.
 
 **Sensitive Data and Secrets Scanners:**
 --------------------------
-* **Nosey Parker** - <https://github.com/praetorian-inc/noseyparker>
+* **Nosey Parker** - [Github Repository](https://github.com/praetorian-inc/noseyparker)
 	 - Nosey Parker is a command-line program that finds secrets
 	   and sensitive information in textual data.
 	 
-* **Trufflehog** - <https://github.com/trufflesecurity/trufflehog>
+* **Trufflehog** - [Github Repository](https://github.com/trufflesecurity/trufflehog)
 	 - TruffleHog is an open-source secret scanning engine that detects
 	   and helps resolve exposed secrets across your entire tech stack.
  
 
 **Python Libs and Tools:**
 --------------------------
-* **peepdf** - <https://github.com/jesparza/peepdf> 
+* **peepdf** - [Github Repository](https://github.com/jesparza/peepdf) 
     - Tool to explore PDF files, it can parse different versions of a file,
 	object streams and encrypted files.
-* **pdfid** - <https://github.com/DidierStevens>
+* **pdfid** - [Github Repository](https://github.com/DidierStevens)
 	  - Didier Stevens’s tool to test a PDF file
-* **dfir\_ntfs** - <https://github.com/msuhanov/dfir_ntfs>
+* **dfir\_ntfs** - [Github Repository](https://github.com/msuhanov/dfir_ntfs)
 	  - an NTFS/FAT parser for digital forensics & incident response
-* **oletools** - <https://github.com/decalage2/oletools>
+* **oletools** - [Github Repository](https://github.com/decalage2/oletools)
 	  - oletools is a package of python tools to analyze Microsoft OLE2 files
-* **hindsight** - <https://github.com/obsidianforensics/hindsight>
+* **hindsight** - [Github Repository](https://github.com/obsidianforensics/hindsight)
 	  - web artefacts and browsing history from Chromium-based web browsers	  
 	  
 
