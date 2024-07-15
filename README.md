@@ -62,7 +62,7 @@ Forensics Tools:
   * **WxTCmd** version 1.0.0.0
   * **bstrings** version 1.5.2.0
 
-* **SIDR** - <https://github.com/strozfriedberg/sidr>
+* **SIDR** - [Github Repository](https://github.com/strozfriedberg/sidr)
   * SIDR (Search Index DB Reporter) is a Rust-based tool designed to parse Windows 
     search artifacts from Windows 10 (and prior) and Windows 11 systems.
 
