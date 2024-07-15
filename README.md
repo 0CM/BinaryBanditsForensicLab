@@ -1,6 +1,6 @@
 Ubuntu based Linux VM for Digital Forensics
 ----------------
-Lightweight linux distribution for digital forensic and incident response. 
+Lightweight (cli only) Linux distribution for digital forensic and incident response. 
 Primarily to be used on Apple Silicon or other ARM64 based systems.
 
 \* x86\_64 binaries will be ported later.
