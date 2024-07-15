@@ -124,6 +124,7 @@ write_files:
         alias wxtcmd="/home/ubuntu/tools/EZTools/WxTCmd/WxTCmd"
         alias rla="/home/ubuntu/tools/EZTools/rla/rla"
         alias noseyparker="/home/ubuntu/tools/noseyparker/bin/noseyparker"
+        alias noseyparker="/home/ubuntu/tools/trufflehog/trufflehog"
         alias log2timeline="log2timeline.py"
         alias pinfo="pinfo.py"
         alias image_export="image_export.py"
