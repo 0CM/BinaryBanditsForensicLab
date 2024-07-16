@@ -99,9 +99,8 @@ Forensics Tools:
 
 **Python Libs and Tools:**
 --------------------------
-* **peepdf** - [Github Repository](https://github.com/jesparza/peepdf) 
-    - Tool to explore PDF files, it can parse different versions of a file,
-	object streams and encrypted files.
+* **peepdf** - [Github Repository](https://github.com/jesparza/peepdf) - tool to explore 
+PDF files, it can parse different versions of a file, object streams and encrypted files.
 * **pdfid** - [Github Repository](https://github.com/DidierStevens)
 	  - Didier Stevens’s tool to test a PDF file
 * **dfir\_ntfs** - [Github Repository](https://github.com/msuhanov/dfir_ntfs)
