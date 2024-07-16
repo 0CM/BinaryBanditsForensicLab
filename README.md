@@ -45,6 +45,15 @@ Share folder between the VM and host system:
 ```
 multipass mount path/to/local/folder BanditLab:/home/ubuntu/DATA
 ```
+
+Lab Help:
+----------------
+Run the alias command to get a list of shortcuts for running the custom tools.
+
+```
+alias
+```
+
 Forensics Tools:
 ----------------
 
@@ -201,5 +210,4 @@ Forensics Tools:
 	  - readpe is a toolkit designed to analyze Microsoft Windows PE (Portable Executable)
 	    binary files. Its tools can parse and compare PE32/PE32+ executable files (EXE, 
 	    DLL, OCX, etc), and analyze them in search of suspicious characteristics
-* **ugrep**	    
-      - faster grep with an interactive query UI 
+* **ugrep**	- faster grep with an interactive query UI 
