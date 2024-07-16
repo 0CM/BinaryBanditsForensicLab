@@ -100,8 +100,15 @@ Forensics Tools:
 * **oletools** - [Github Repository](https://github.com/decalage2/oletools)
 	  - oletools is a package of python tools to analyze Microsoft OLE2 files
 * **hindsight** - [Github Repository](https://github.com/obsidianforensics/hindsight)
-	  - web artefacts and browsing history from Chromium-based web browsers	  
-	  
+	  - web artefacts and browsing history from Chromium-based web browsers
+* **browserexport** - [Github Repository](https://github.com/seanbreckenridge/browserexport)
+	  - web artefacts and browsing history from Chrome-based web browsers,Firefox, Safari and more. 	  
+* **windowsprefetch** - [Github Repository](https://github.com/PoorBillionaire/Windows-Prefetch-Parser)
+	  - Parser for Windows XP - Windows 10 Prefetch files 	  
+* **xlsxgrep** - [Github Repository](https://github.com/zazuum/xlsxgrep)
+	  - tool to search text in XLSX, XLS, CSV, TSV and ODS files.	
+
+
 
 **Linux Packages**:
 -------------------
@@ -194,3 +201,5 @@ Forensics Tools:
 	  - readpe is a toolkit designed to analyze Microsoft Windows PE (Portable Executable)
 	    binary files. Its tools can parse and compare PE32/PE32+ executable files (EXE, 
 	    DLL, OCX, etc), and analyze them in search of suspicious characteristics
+* **ugrep**	    
+      - faster grep with an interactive query UI 

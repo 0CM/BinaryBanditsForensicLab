@@ -77,6 +77,7 @@ packages:
   - python3-pip
   - extundelete
   - libarchive-tools
+  - ugrep
 
 runcmd:
  - sudo -u ubuntu mkdir /home/ubuntu/DATA
@@ -98,7 +99,7 @@ runcmd:
  - sudo -u ubuntu sh -c 'git clone https://github.com/SigmaHQ/sigma $HOME/tools/chainsaw/sigma'
  - sudo -u ubuntu sh -c 'git clone https://github.com/CISOfy/lynis $HOME/tools/lynis'
  - sudo -u ubuntu python3 -m venv /home/ubuntu/pyapps
- - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install peepdf-3 pdfid oletools pdftextract pyhindsight
+ - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install peepdf-3 pdfid oletools pdftextract pyhindsight browserexport windowsprefetch xlsxgrep
  - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install https://github.com/msuhanov/dfir_ntfs/archive/1.1.18.tar.gz
  - sudo -u ubuntu chmod 755 /home/ubuntu/tools/hayabusa/hayabusa-2.16.0-lin-aarch64-gnu
  - sudo -u ubuntu chmod 755 /home/ubuntu/pyapps/bin/hindsight.py
@@ -125,12 +126,12 @@ write_files:
         alias rla="/home/ubuntu/tools/EZTools/rla/rla"
         alias noseyparker="/home/ubuntu/tools/noseyparker/bin/noseyparker"
         alias noseyparker="/home/ubuntu/tools/trufflehog/trufflehog"
-        alias log2timeline="log2timeline.py"
-        alias pinfo="pinfo.py"
-        alias image_export="image_export.py"
-        alias pinfo="pinfo.py"
-        alias psort="psort.py"
-        alias psteal="psteal.py"
+        alias log2timeline="/usr/bin/log2timeline.py"
+        alias pinfo="/usr/bin/pinfo.py"
+        alias image_export="/usr/bin/image_export.py"
+        alias pinfo="/usr/bin/pinfo.py"
+        alias psort="/usr/bin/psort.py"
+        alias psteal="/usr/bin/psteal.py"
         alias pyapps="source $HOME/pyapps/bin/activate"
         alias peepdf="source $HOME/pyapps/bin/activate&&peepdf"
         alias pdfid="source $HOME/pyapps/bin/activate&&pdfid"
@@ -140,5 +141,9 @@ write_files:
         alias ntfs_parser="source $HOME/pyapps/bin/activate&&ntfs_parser"
         alias hindsight="source $HOME/pyapps/bin/activate&&hindsight.py"
         alias hindsight_gui="source $HOME/pyapps/bin/activate&&hindsight_gui.py"
+        alias hindsight_gui="source $HOME/pyapps/bin/activate&&browserexport"
+        alias prefetch="source $HOME/pyapps/bin/activate&&prefetch.py"
+        alias prefetch="source $HOME/pyapps/bin/activate&&xlsxgrep"
+        
     append: true
     defer: true
