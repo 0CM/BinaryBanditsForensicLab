@@ -74,6 +74,10 @@ Forensics Tools:
 * **SIDR** - [Github Repository](https://github.com/strozfriedberg/sidr)
   * SIDR (Search Index DB Reporter) is a Rust-based tool designed to parse Windows 
     search artifacts from Windows 10 (and prior) and Windows 11 systems.
+    
+* **MemProcFS** - [Github Repository](https://github.com/ufrisk/MemProcFS)
+  * MemProcFS: MemProcFS is an easy and convenient way of viewing 
+    physical memory as files in a virtual file system.   
 
 **SIGMA, YARA and IOC Scanners:**
 --------------------------
