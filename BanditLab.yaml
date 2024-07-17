@@ -96,6 +96,7 @@ runcmd:
  - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/trufflesecurity/trufflehog/releases/download/v3.79.0/trufflehog_3.79.0_linux_arm64.tar.gz| tar -xz -C $HOME/tools/trufflehog'
  - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/praetorian-inc/noseyparker/releases/download/v0.18.1/noseyparker-v0.18.1-aarch64-unknown-linux-gnu.tar.gz | tar -xz -C $HOME/tools/noseyparker'
  - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/chainsaw_aarch64-20240713.tar.gz| tar -xz -C $HOME/tools/'
+ - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/timeliner_aarch64-20240717.tar.gz| tar -xz -C $HOME/tools/'
  - sudo -u ubuntu sh -c 'git clone https://github.com/SigmaHQ/sigma $HOME/tools/chainsaw/sigma'
  - sudo -u ubuntu sh -c 'git clone https://github.com/CISOfy/lynis $HOME/tools/lynis'
  - sudo -u ubuntu python3 -m venv /home/ubuntu/pyapps
@@ -126,6 +127,7 @@ write_files:
         alias rla="/home/ubuntu/tools/EZTools/rla/rla"
         alias noseyparker="/home/ubuntu/tools/noseyparker/bin/noseyparker"
         alias noseyparker="/home/ubuntu/tools/trufflehog/trufflehog"
+        alias timeliner="/home/ubuntu/tools/timeliner/timeliner"
         alias log2timeline="/usr/bin/log2timeline.py"
         alias pinfo="/usr/bin/pinfo.py"
         alias image_export="/usr/bin/image_export.py"
