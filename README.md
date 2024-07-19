@@ -124,8 +124,20 @@ PDF files, it can parse different versions of a file, object streams and encrypt
 	  - Parser for Windows XP - Windows 10 Prefetch files 	  
 * **xlsxgrep** - [Github Repository](https://github.com/zazuum/xlsxgrep)
 	  - tool to search text in XLSX, XLS, CSV, TSV and ODS files.	
+* **flare-capa** - [Github Repository](https://github.com/mandiant/capa)
+	  - capa detects capabilities in executable files. You run it against a PE,
+	    ELF, .NET module, shellcode file, or a sandbox report
 
+**Optional Tools**:
+-------------------
+* **azure-cli** - [Github Repository](https://github.com/Azure/azure-cli) - Azure Command-Line Interface
+	- run ```installazurecli``` to install the package
 
+* **gcloud-cli** - [Home Page](https://cloud.google.com/cli?hl=en) - Google Cloud Command Line Interface
+	- run ```installgcloudcli``` to install the package
+
+* **PowerShell 7.4** - [Home Page](https://learn.microsoft.com/en-us/powershell/scripting/overview?view=powershell-7.4) - Microsoft PowerShell 
+	- run ```installpwsh``` to install the package
 
 **Linux Packages**:
 -------------------

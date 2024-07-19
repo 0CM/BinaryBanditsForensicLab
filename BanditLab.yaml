@@ -32,6 +32,54 @@ apt:
         yRDdXGU=
         =zcgX
         -----END PGP PUBLIC KEY BLOCK-----
+    google-cloud-sdk:
+      source: deb [arch="arm64","amd64"] https://packages.cloud.google.com/apt cloud-sdk main
+      key: |
+        -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+        mQENBGCRt7MBCADkYJHHQQoL6tKrW/LbmfR9ljz7ib2aWno4JO3VKQvLwjyUMPpq
+        /SXXMOnx8jXwgWizpPxQYDRJ0SQXS9ULJ1hXRL/OgMnZAYvYDeV2jBnKsAIEdiG/
+        e1qm8P4W9qpWJc+hNq7FOT13RzGWRx57SdLWSXo0KeY38r9lvjjOmT/cuOcmjwlD
+        T9XYf/RSO+yJ/AsyMdAr+ZbDeQUd9HYJiPdI04lGaGM02MjDMnx+monc+y54t+Z+
+        ry1WtQdzoQt9dHlIPlV1tR+xV5DHHsejCZxu9TWzzSlL5wfBBeEz7R/OIzivGJpW
+        QdJzd+2QDXSRg9q2XYWP5ZVtSgjVVJjNlb6ZABEBAAG0VEFydGlmYWN0IFJlZ2lz
+        dHJ5IFJlcG9zaXRvcnkgU2lnbmVyIDxhcnRpZmFjdC1yZWdpc3RyeS1yZXBvc2l0
+        b3J5LXNpZ25lckBnb29nbGUuY29tPokBTgQTAQoAOBYhBDW6oLM+nrOW9ZyoOMC6
+        XObcYxWjBQJgkbezAhsDBQsJCAcCBhUKCQgLAgQWAgMBAh4BAheAAAoJEMC6XObc
+        YxWj+igIAMFh6DrAYMeq9sbZ1ZG6oAMrinUheGQbEqe76nIDQNsZnhDwZ2wWqgVC
+        7DgOMqlhQmOmzm7M6Nzmq2dvPwq3xC2OeI9fQyzjT72deBTzLP7PJok9PJFOMdLf
+        ILSsUnmMsheQt4DUO0jYAX2KUuWOIXXJaZ319QyoRNBPYa5qz7qXS7wHLOY89IDq
+        fHt6Aud8ER5zhyOyhytcYMeaGC1g1IKWmgewnhEq02FantMJGlmmFi2eA0EPD02G
+        C3742QGqRxLwjWsm5/TpyuU24EYKRGCRm7QdVIo3ugFSetKrn0byOxWGBvtu4fH8
+        XWvZkRT+u+yzH1s5yFYBqc2JTrrJvRWZAQ0EYoi11AEIANaYpM1kRhaBfLvcW8oV
+        jl9Guji0Y1rgF7hNlbfBmly30KPwSPKRTtL0Q+gncR0qnEWW0dG7tBsOLotZI0Dh
+        fHCe51CtgbGfHHpG7UoEcXEeEt9ay8VwYzCK3/OenG0i31TOoKbZhMRbk1SfNDit
+        dipVArYUsbjB5gnlsrCRj5mydEmnPF0cYnSkGKrCQxPxt9B0nKZQGjCf5J65DYcS
+        p+NUywhF7R3B4PY8dZ5aj19NezPVDlpuIZyTI5XKg33/8OBK8tShxRxmyta9g9o3
+        6jyVdM7cZgUY1WzHTr2vFquR4KM6mJA5atCbLBchJC51y6xKCaaB+xFlhbsUMHLk
+        xCsAEQEAAbRRUmFwdHVyZSBBdXRvbWF0aWMgU2lnbmluZyBLZXkgKGNsb3VkLXJh
+        cHR1cmUtc2lnbmluZy1rZXktMjAyMi0wMy0wNy0wOF8wMV8wMS5wdWIpiQEiBBMB
+        CAAWBQJiiLXUCRC1PcgNE+3vBQIbAwIZAQAAwagH/3xAE0gg3dDYPdpqGt+RvprF
+        3nnM7BHS2euK4lGg8eg26is6kK/1pYwy9AAI1aTGy8nEQXw5RvOFJiMBHnfhEOKC
+        NN62MraLbAovP+QmNlu4XhlczKcKbjR5WbVdmpTrdT1dHZHGZemnI2kypA70uvMY
+        Sc0m6HbeJxpljqejXZrHKbFyV7/5IKZ1rygMB9rSLIDaLKD95TTlu5m/ngwLpEHX
+        dC1L7y86soMavtFin9Vi9DNhab5yToO+VpVfpUHnUGQuXbdJCSfJkgkFU+by21Tr
+        kTKuuAbWMsscVcNSon9Gk0qr48LNaLK3i7LcB9crz1FzMu7e7GIPQJAjRPfW78i5
+        AQ0EYoi11AEIAMgwwl1FyDQ+G/v4KtnPfFETwVvPwA35gIuKBB4fQH2WKPGSMAWv
+        62EHQis67uu7A1j6a90/p0B7BS6v6kloiMR77izwkEQVvgHEl8EE+4RsZLFuLg48
+        Qm7BPndMwkwSzv6AjEIKbCKhOCBMGnonMOxP9x0F7JYK6wJDANamqhgKhRYkutRD
+        p06Ujuzqn6IhQ0hqa3IELBviLOzbsd0SlfyC872sR21xvvf30fI7egPiAeBy4WK5
+        lOm9Yd2f1ZjA8Yzqekk0btyu0udy1NHRw/0q61I83OnJJ4CeIfHwv15t0P2008JY
+        L4605wZGtwF4TOeRiHULiTN0/U5Gbm6meScAEQEAAYkBHwQYAQgAEwUCYoi11AkQ
+        tT3IDRPt7wUCGwwAAEmYCACFE+T90WPvVtT9RNeuQSRlnMT0nNSBqf+23JGtXpBs
+        VkAEHJ/iliMGP7IsrDfbzT/8la6sqjHa7MSrWF1c951EcgJG6HUWN3TSi1pD7AYX
+        eRjvjOVaK8Hpanq2cv1JNDWhVgFS/seFIegnmyEQvJ53HEfG6tSAUAP6lsVciIrx
+        ycAd9dMkxyuY+kL5hYQL8N6ojIRw0+TNGG1FK4RFdyrWf4om8xQAowP+17PC+6PM
+        FppJZqmZ2caa1GOMvsjFR4ZqZVY7AtBtSv7fgzDN14l1wvx9q/ksDxSTS6XJ5d3C
+        IArwUpCyLEj7Fm/PsdSzyWfilnAbD9Om871wyQeiC2DN
+        =gsYm
+        -----END PGP PUBLIC KEY BLOCK-----
+
 
 packages:
   - aeskeyfind
@@ -78,33 +126,32 @@ packages:
   - extundelete
   - libarchive-tools
   - ugrep
+  - apt-transport-https
 
 runcmd:
  - sudo -u ubuntu mkdir /home/ubuntu/DATA
  - sudo -u ubuntu mkdir mkdir /home/ubuntu/ewfmount
  - sudo -u ubuntu mkdir mkdir /home/ubuntu/evidence
  - sudo -u ubuntu mkdir mkdir /home/ubuntu/tools
- - sudo -u ubuntu mkdir mkdir /home/ubuntu/tools/memprocfs
  - sudo -u ubuntu mkdir mkdir /home/ubuntu/tools/hayabusa
- - sudo -u ubuntu mkdir mkdir /home/ubuntu/tools/trufflehog
- - sudo -u ubuntu mkdir mkdir /home/ubuntu/tools/noseyparker
- - sudo -u ubuntu mkdir mkdir /home/ubuntu/tools/chainsaw
  - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/EZTools_aarch64-20240710.tar.gz| tar -xz -C $HOME/tools/'
  - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/sidr_aarch64-20240702.tar.gz| tar -xz -C $HOME/tools/'
- - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/ufrisk/MemProcFS/releases/download/v5.9/MemProcFS_files_and_binaries_v5.9.18-linux_aarch64-20240613.tar.gz| tar -xz -C $HOME/tools/memprocfs' 
+ - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/ufrisk/MemProcFS/releases/download/v5.9/MemProcFS_files_and_binaries_v5.9.18-linux_aarch64-20240613.tar.gz| tar -xz -C $HOME/tools/ --one-top-level=memprocfs' 
  - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/Yamato-Security/hayabusa/releases/download/v2.16.0/hayabusa-2.16.0-linux-arm.zip |  bsdtar -xvf- -C $HOME/tools/hayabusa'
- - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/trufflesecurity/trufflehog/releases/download/v3.79.0/trufflehog_3.79.0_linux_arm64.tar.gz| tar -xz -C $HOME/tools/trufflehog'
- - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/praetorian-inc/noseyparker/releases/download/v0.18.1/noseyparker-v0.18.1-aarch64-unknown-linux-gnu.tar.gz | tar -xz -C $HOME/tools/noseyparker'
- - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/chainsaw_aarch64-20240713.tar.gz| tar -xz -C $HOME/tools/'
+ - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/trufflesecurity/trufflehog/releases/download/v3.79.0/trufflehog_3.79.0_linux_arm64.tar.gz| tar -xz -C $HOME/tools/trufflehog --one-top-level=trufflehog'
+ - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/praetorian-inc/noseyparker/releases/download/v0.18.1/noseyparker-v0.18.1-aarch64-unknown-linux-gnu.tar.gz | tar -xz -C $HOME/tools/ --one-top-level=noseyparker'
+ - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/chainsaw_aarch64-20240713.tar.gz| tar -xz -C $HOME/tools/ --one-top-level=chainsaw'
  - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/timeliner_aarch64-20240717.tar.gz| tar -xz -C $HOME/tools/'
  - sudo -u ubuntu sh -c 'git clone https://github.com/SigmaHQ/sigma $HOME/tools/chainsaw/sigma'
  - sudo -u ubuntu sh -c 'git clone https://github.com/CISOfy/lynis $HOME/tools/lynis'
  - sudo -u ubuntu python3 -m venv /home/ubuntu/pyapps
+ - sudo -u ubuntu python3 -m venv /home/ubuntu/pyflare
  - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install peepdf-3 pdfid oletools pdftextract pyhindsight browserexport windowsprefetch xlsxgrep
  - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install https://github.com/msuhanov/dfir_ntfs/archive/1.1.18.tar.gz
  - sudo -u ubuntu chmod 755 /home/ubuntu/tools/hayabusa/hayabusa-2.16.0-lin-aarch64-gnu
  - sudo -u ubuntu chmod 755 /home/ubuntu/pyapps/bin/hindsight.py
  - sudo -u ubuntu chmod 755 /home/ubuntu/pyapps/bin/hindsight_gui.py
+ - sudo -u ubuntu /home/ubuntu/pyflare/bin/python3 -m pip install flare-capa
  
 write_files:
   - path: /home/ubuntu/.bashrc
@@ -143,9 +190,15 @@ write_files:
         alias ntfs_parser="source $HOME/pyapps/bin/activate&&ntfs_parser"
         alias hindsight="source $HOME/pyapps/bin/activate&&hindsight.py"
         alias hindsight_gui="source $HOME/pyapps/bin/activate&&hindsight_gui.py"
-        alias hindsight_gui="source $HOME/pyapps/bin/activate&&browserexport"
+        alias browserexport="source $HOME/pyapps/bin/activate&&browserexport"
         alias prefetch="source $HOME/pyapps/bin/activate&&prefetch.py"
-        alias prefetch="source $HOME/pyapps/bin/activate&&xlsxgrep"
+        alias xlsxgrep="source $HOME/pyapps/bin/activate&&xlsxgrep"
+        alias capa="source $HOME/pyflare/bin/activate&&capa"
+        alias installazurecli="curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash"
+        alias installgcloudcli="sudo snap install google-cloud-cli --classic"
+        alias installgcloudsdk="sudo snap install google-cloud-sdk --classic"
+        alias installpwsh="sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/PowerShell/PowerShell/releases/download/v7.4.3/powershell-7.4.3-linux-arm64.tar.gz | tar -xz -C $HOME/tools/ --one-top-level=powershell' && sudo ln -s $HOME/tools/powershell/pwsh /usr/bin/pwsh && chmod 755 $HOME/tools/powershell/pwsh"
+        
         
     append: true
     defer: true
