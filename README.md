@@ -107,6 +107,9 @@ Forensics Tools:
 * **ioc-scanner**	- [Github Repository](https://github.com/cisagov/ioc-scanner)
 	-  Cybersecurity and Infrastructure Security Agency IoC scanner
 
+* **yara**	- [Github Repository](https://virustotal.github.io/yara/)
+	-  Pattern matching swiss knife for malware researchers
+
 
 **Sensitive Data / Secrets Scanners:**
 --------------------------
@@ -123,13 +126,13 @@ Forensics Tools:
 --------------------------
  
 * **JQ** - [Github Repository](https://jqlang.github.io/jq/)
-	 - slice and filter and map and transform JSON structured data 
+	 - Slice and filter and map and transform JSON structured data 
 
 * **PUP** - [Github Repository](https://github.com/ericchiang/pup)
-	 - command line tool for processing HTML
+	 - Command line tool for processing HTML
 
 * **ugrep** - [Github Repository](https://github.com/Genivia/ugrep)
-	 - Ugrep is a true drop-in replacement for GNU grep
+	 - Faster grep with an interactive query UI 
 
 
 **Python Libs and Tools:**
@@ -215,8 +218,6 @@ PDF files, it can parse different versions of a file, object streams and encrypt
 	  - tools for forensics analysis on volume and filesystem data
 * **ssdeep**
 	  - recursive piecewise hashing tool
-* **yara**
-	  - Pattern matching swiss knife for malware researchers
 * **ext3grep**
 	  - tool to help recover deleted files on ext3 filesystems
 * **libimage-exiftool-perl**
@@ -259,7 +260,6 @@ PDF files, it can parse different versions of a file, object streams and encrypt
 	  - readpe is a toolkit designed to analyze Microsoft Windows PE (Portable Executable)
 	    binary files. Its tools can parse and compare PE32/PE32+ executable files (EXE, 
 	    DLL, OCX, etc), and analyze them in search of suspicious characteristics
-* **ugrep**	- faster grep with an interactive query UI 
 * **parallel**	- GNU parallel is a shell tool for executing jobs in parallel using one or more computers.  
 
 
