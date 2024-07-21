@@ -108,7 +108,7 @@ Forensics Tools:
 	-  Cybersecurity and Infrastructure Security Agency IoC scanner
 
 
-**Sensitive Data / Secrets Scanners and Text Manipulation Tools:**
+**Sensitive Data / Secrets Scanners:**
 --------------------------
 * **Nosey Parker** - [Github Repository](https://github.com/praetorian-inc/noseyparker)
 	 - Nosey Parker is a command-line program that finds secrets
@@ -117,12 +117,20 @@ Forensics Tools:
 * **Trufflehog** - [Github Repository](https://github.com/trufflesecurity/trufflehog)
 	 - TruffleHog is an open-source secret scanning engine that detects
 	   and helps resolve exposed secrets across your entire tech stack.
+
+
+**Text Manipulation Tools:**
+--------------------------
  
 * **JQ** - [Github Repository](https://jqlang.github.io/jq/)
 	 - slice and filter and map and transform JSON structured data 
 
 * **PUP** - [Github Repository](https://github.com/ericchiang/pup)
 	 - command line tool for processing HTML
+
+* **ugrep** - [Github Repository](https://github.com/Genivia/ugrep)
+	 - Ugrep is a true drop-in replacement for GNU grep
+
 
 **Python Libs and Tools:**
 --------------------------
