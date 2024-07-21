@@ -127,6 +127,9 @@ packages:
   - libarchive-tools
   - ugrep
   - apt-transport-https
+  - parallel
+  - nikto
+
 
 runcmd:
  - sudo -u ubuntu mkdir /home/ubuntu/DATA
@@ -134,6 +137,9 @@ runcmd:
  - sudo -u ubuntu mkdir mkdir /home/ubuntu/evidence
  - sudo -u ubuntu mkdir mkdir /home/ubuntu/tools
  - sudo -u ubuntu mkdir mkdir /home/ubuntu/tools/hayabusa
+ - sudo -u ubuntu mkdir mkdir /home/ubuntu/tools/pup
+ - sudo -u ubuntu mkdir mkdir /home/ubuntu/tools/vt
+ - sudo -u ubuntu mkdir mkdir /home/ubuntu/tools/nuclei
  - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/EZTools_aarch64-20240710.tar.gz| tar -xz -C $HOME/tools/'
  - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/sidr_aarch64-20240702.tar.gz| tar -xz -C $HOME/tools/'
  - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/ufrisk/MemProcFS/releases/download/v5.9/MemProcFS_files_and_binaries_v5.9.18-linux_aarch64-20240613.tar.gz| tar -xz -C $HOME/tools/ --one-top-level=memprocfs' 
@@ -146,12 +152,16 @@ runcmd:
  - sudo -u ubuntu sh -c 'git clone https://github.com/CISOfy/lynis $HOME/tools/lynis'
  - sudo -u ubuntu python3 -m venv /home/ubuntu/pyapps
  - sudo -u ubuntu python3 -m venv /home/ubuntu/pyflare
- - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install peepdf-3 pdfid oletools pdftextract pyhindsight browserexport windowsprefetch xlsxgrep
+ - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install peepdf-3 pdfid oletools pyhindsight browserexport windowsprefetch xlsxgrep tabulate dnspython wheel
  - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install https://github.com/msuhanov/dfir_ntfs/archive/1.1.18.tar.gz
+ - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install git+https://github.com/cisagov/ioc-scanner.git
  - sudo -u ubuntu chmod 755 /home/ubuntu/tools/hayabusa/hayabusa-2.16.0-lin-aarch64-gnu
  - sudo -u ubuntu chmod 755 /home/ubuntu/pyapps/bin/hindsight.py
  - sudo -u ubuntu chmod 755 /home/ubuntu/pyapps/bin/hindsight_gui.py
  - sudo -u ubuntu /home/ubuntu/pyflare/bin/python3 -m pip install flare-capa
+ - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO-  https://github.com/ericchiang/pup/releases/download/v0.4.0/pup_v0.4.0_linux_arm64.zip |  bsdtar -xvf- -C $HOME/tools/pup && sudo ln -s $HOME/tools/pup/pup /usr/bin/pup && chmod 755 $HOME/tools/pup/pup'
+ - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/vt-cli_aarch64-20240720.tar.gz| tar -xz -C $HOME/tools/vt && sudo ln -s $HOME/tools/vt/vt /usr/bin/vt'
+ - sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/projectdiscovery/nuclei/releases/download/v3.3.0/nuclei_3.3.0_linux_arm64.zip |  bsdtar -xvf- -C $HOME/tools/nuclei && sudo ln -s $HOME/tools/nuclei/nuclei /usr/bin/nuclei && chmod 755 $HOME/tools/nuclei/nuclei'
  
 write_files:
   - path: /home/ubuntu/.bashrc
@@ -173,7 +183,7 @@ write_files:
         alias wxtcmd="/home/ubuntu/tools/EZTools/WxTCmd/WxTCmd"
         alias rla="/home/ubuntu/tools/EZTools/rla/rla"
         alias noseyparker="/home/ubuntu/tools/noseyparker/bin/noseyparker"
-        alias noseyparker="/home/ubuntu/tools/trufflehog/trufflehog"
+        alias trufflehog="/home/ubuntu/tools/trufflehog/trufflehog"
         alias timeliner="/home/ubuntu/tools/timeliner/timeliner"
         alias log2timeline="/usr/bin/log2timeline.py"
         alias pinfo="/usr/bin/pinfo.py"
@@ -184,8 +194,6 @@ write_files:
         alias pyapps="source $HOME/pyapps/bin/activate"
         alias peepdf="source $HOME/pyapps/bin/activate&&peepdf"
         alias pdfid="source $HOME/pyapps/bin/activate&&pdfid"
-        alias pdftextract="source $HOME/pyapps/bin/activate&&pdftextract"
-        alias exespy="source $HOME/pyapps/bin/activate&&exespy"
         alias fat_parser="source $HOME/pyapps/bin/activate&&fat_parser"
         alias ntfs_parser="source $HOME/pyapps/bin/activate&&ntfs_parser"
         alias hindsight="source $HOME/pyapps/bin/activate&&hindsight.py"
@@ -193,11 +201,12 @@ write_files:
         alias browserexport="source $HOME/pyapps/bin/activate&&browserexport"
         alias prefetch="source $HOME/pyapps/bin/activate&&prefetch.py"
         alias xlsxgrep="source $HOME/pyapps/bin/activate&&xlsxgrep"
+        alias ioc-scan="source $HOME/pyapps/bin/activate&&ioc-scan"
         alias capa="source $HOME/pyflare/bin/activate&&capa"
         alias installazurecli="curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash"
         alias installgcloudcli="sudo snap install google-cloud-cli --classic"
         alias installgcloudsdk="sudo snap install google-cloud-sdk --classic"
-        alias installpwsh="sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/PowerShell/PowerShell/releases/download/v7.4.3/powershell-7.4.3-linux-arm64.tar.gz | tar -xz -C $HOME/tools/ --one-top-level=powershell' && sudo ln -s $HOME/tools/powershell/pwsh /usr/bin/pwsh && chmod 755 $HOME/tools/powershell/pwsh"
+        alias installpwsh="sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/PowerShell/PowerShell/releases/download/v7.4.3/powershell-7.4.3-linux-arm64.tar.gz | tar -xz -C $HOME/tools/ --one-top-level=powershell && sudo ln -s $HOME/tools/powershell/pwsh /usr/bin/pwsh && chmod 755 $HOME/tools/powershell/pwsh'"
         
         
     append: true

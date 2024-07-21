@@ -84,7 +84,7 @@ Forensics Tools:
     and apply the BPF logic to filter events based on the time.  
 
 
-**SIGMA, YARA and IOC Scanners:**
+**SIGMA, YARA, IOC and other scanners:**
 --------------------------
 * **Chainsaw** - [Github Repository](https://github.com/WithSecureLabs/chainsaw)
 	 - Chainsaw offers a generic and fast method of searching through event logs
@@ -95,7 +95,20 @@ Forensics Tools:
 	 - Hayabusa is a Windows event log fast forensics timeline generator
 	   and threat hunting tool created by the Yamato Security.
 
-**Sensitive Data and Secrets Scanners:**
+* **VT-CLI** - [Github Repository](https://github.com/VirusTotal)
+	 - VirusTotal Command Line Interface
+
+* **Nikto**	- [Github Repository](https://github.com/sullo/nikto)
+	- Nikto web server scanner
+
+* **Nuclei**	- [Github Repository](https://github.com/projectdiscovery/nuclei)
+	-  Fast and customisable vulnerability scanner based on simple YAML based DSL.
+
+* **ioc-scanner**	- [Github Repository](https://github.com/cisagov/ioc-scanner)
+	-  Cybersecurity and Infrastructure Security Agency IoC scanner
+
+
+**Sensitive Data / Secrets Scanners and Text Manipulation Tools:**
 --------------------------
 * **Nosey Parker** - [Github Repository](https://github.com/praetorian-inc/noseyparker)
 	 - Nosey Parker is a command-line program that finds secrets
@@ -105,6 +118,11 @@ Forensics Tools:
 	 - TruffleHog is an open-source secret scanning engine that detects
 	   and helps resolve exposed secrets across your entire tech stack.
  
+* **JQ** - [Github Repository](https://jqlang.github.io/jq/)
+	 - slice and filter and map and transform JSON structured data 
+
+* **PUP** - [Github Repository](https://github.com/ericchiang/pup)
+	 - command line tool for processing HTML
 
 **Python Libs and Tools:**
 --------------------------
@@ -127,6 +145,9 @@ PDF files, it can parse different versions of a file, object streams and encrypt
 * **flare-capa** - [Github Repository](https://github.com/mandiant/capa)
 	  - capa detects capabilities in executable files. You run it against a PE,
 	    ELF, .NET module, shellcode file, or a sandbox report
+* **Elyzer** - [Github Repository](https://github.com/B0lg0r0v/Elyzer)
+	  - MIME / email headers parser
+
 
 **Optional Tools**:
 -------------------
@@ -231,3 +252,6 @@ PDF files, it can parse different versions of a file, object streams and encrypt
 	    binary files. Its tools can parse and compare PE32/PE32+ executable files (EXE, 
 	    DLL, OCX, etc), and analyze them in search of suspicious characteristics
 * **ugrep**	- faster grep with an interactive query UI 
+* **parallel**	- GNU parallel is a shell tool for executing jobs in parallel using one or more computers.  
+
+
