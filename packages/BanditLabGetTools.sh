@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #Create Folder Structure
+
 sudo -u ubuntu sh -c 'mkdir "$HOME"/DATA'
 sudo -u ubuntu sh -c 'mkdir "$HOME"/ewfmount'
 sudo -u ubuntu sh -c 'mkdir "$HOME"/evidence'
@@ -17,8 +18,7 @@ sudo -u ubuntu sh -c 'mkdir "$HOME"/tools/chainsaw'
 
 ARCH=$(uname -m) 
 # Check the architecture and execute corresponding commands
-echo "$ARCH packages will be installed .."
-if [ "$ARCH = "aarch64" ]; then
+if [ "$ARCH" = "aarch64" ]; then
 	sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/EZTools_aarch64-20240710.tar.gz| tar -xz -C $HOME/tools/'
 	sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/sidr_aarch64-20240702.tar.gz| tar -xz -C $HOME/tools/'
 	sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/ufrisk/MemProcFS/releases/download/v5.10/MemProcFS_files_and_binaries_v5.10.1-linux_aarch64-20240721.tar.gz| tar -xvz -C $HOME/tools/memprocfs' 
@@ -31,7 +31,7 @@ if [ "$ARCH = "aarch64" ]; then
 	sudo -u ubuntu sh -c 'wget --no-check-certificate -qO-  https://github.com/ericchiang/pup/releases/download/v0.4.0/pup_v0.4.0_linux_arm64.zip |  bsdtar -xvf- -C $HOME/tools/pup/ && sudo ln -s $HOME/tools/pup/pup /usr/bin/pup && chmod 755 $HOME/tools/pup/pup'
 	sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/vt-cli_aarch64-20240720.tar.gz| tar -xz -C $HOME/tools/vt && sudo ln -s $HOME/tools/vt/vt /usr/bin/vt'
 	sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/projectdiscovery/nuclei/releases/download/v3.3.0/nuclei_3.3.0_linux_arm64.zip |  bsdtar -xvf- -C $HOME/tools/nuclei && sudo ln -s $HOME/tools/nuclei/nuclei /usr/bin/nuclei && chmod 755 $HOME/tools/nuclei/nuclei'
-elif [ $ARCH = "x86_64" ]; then
+elif [ "$ARCH" = "x86_64" ]; then
     echo "Running commands for x86_64 architecture"
     sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/EZTools_x86_64-20240725.tar.gz| tar -xz -C $HOME/tools/'
 	sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/sidr_x86_64-20240725.tar.gz| tar -xz -C $HOME/tools/'
@@ -47,5 +47,5 @@ elif [ $ARCH = "x86_64" ]; then
 	sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/projectdiscovery/nuclei/releases/download/v3.3.0/nuclei_3.3.0_linux_amd64.zip |  bsdtar -xvf- -C $HOME/tools/nuclei && sudo ln -s $HOME/tools/nuclei/nuclei /usr/bin/nuclei && chmod 755 $HOME/tools/nuclei/nuclei'
 
 else
-    echo "Unsupported architecture: $ARCH"
+	echo "Unsupported architecture: $ARCH"
 fi
