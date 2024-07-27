@@ -2,17 +2,17 @@
 
 #Create Folder Structure
 sudo -u ubuntu sh -c 'mkdir "$HOME"/DATA'
-sudo -u ubuntu sh -c 'mkdir $HOME/ewfmount'
-sudo -u ubuntu sh -c 'mkdir $HOME/evidence'
-sudo -u ubuntu sh -c 'mkdir $HOME/tools'
-sudo -u ubuntu sh -c 'mkdir $HOME/tools/hayabusa'
-sudo -u ubuntu sh -c 'mkdir $HOME/tools/memprocfs'
-sudo -u ubuntu sh -c 'mkdir $HOME/tools/trufflehog'
-sudo -u ubuntu sh -c 'mkdir $HOME/tools/noseyparker'
-sudo -u ubuntu sh -c 'mkdir $HOME/tools/pup'
-sudo -u ubuntu sh -c 'mkdir $HOME/tools/vt'
-sudo -u ubuntu sh -c 'mkdir $HOME/tools/nuclei'
-sudo -u ubuntu sh -c 'mkdir $HOME/tools/chainsaw'
+sudo -u ubuntu sh -c 'mkdir "$HOME"/ewfmount'
+sudo -u ubuntu sh -c 'mkdir "$HOME"/evidence'
+sudo -u ubuntu sh -c 'mkdir "$HOME"/tools'
+sudo -u ubuntu sh -c 'mkdir "$HOME"/tools/hayabusa'
+sudo -u ubuntu sh -c 'mkdir "$HOME"/tools/memprocfs'
+sudo -u ubuntu sh -c 'mkdir "$HOME"/tools/trufflehog'
+sudo -u ubuntu sh -c 'mkdir "$HOME"/tools/noseyparker'
+sudo -u ubuntu sh -c 'mkdir "$HOME"/tools/pup'
+sudo -u ubuntu sh -c 'mkdir "$HOME"/tools/vt'
+sudo -u ubuntu sh -c 'mkdir "$HOME"/tools/nuclei'
+sudo -u ubuntu sh -c 'mkdir "$HOME"/tools/chainsaw'
 # Get the machine architecture
 
 ARCH=$(uname -m) 
