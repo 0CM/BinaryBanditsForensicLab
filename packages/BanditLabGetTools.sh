@@ -13,7 +13,7 @@ sudo -u ubuntu sh -c 'mkdir "$HOME"/tools/noseyparker'
 sudo -u ubuntu sh -c 'mkdir "$HOME"/tools/pup'
 sudo -u ubuntu sh -c 'mkdir "$HOME"/tools/vt'
 sudo -u ubuntu sh -c 'mkdir "$HOME"/tools/nuclei'
-sudo -u ubuntu sh -c 'mkdir "$HOME"/tools/chainsaw'
+sudo -u ubuntu sh -c 'mkdir "$HOME"/tools/'
 # Get the machine architecture
 
 ARCH=$(uname -m) 
@@ -26,7 +26,7 @@ if [ "$ARCH" = "aarch64" ]; then
 	sudo -u ubuntu chmod 755 $HOME/tools/hayabusa/hayabusa-2.16.0-lin-aarch64-gnu
 	sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/trufflesecurity/trufflehog/releases/download/v3.79.0/trufflehog_3.79.0_linux_arm64.tar.gz| tar -xz -C $HOME/tools/trufflehog'
 	sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/praetorian-inc/noseyparker/releases/download/v0.18.1/noseyparker-v0.18.1-aarch64-unknown-linux-gnu.tar.gz | tar -xz -C $HOME/tools/noseyparker'
-	sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/chainsaw_aarch64-20240713.tar.gz| tar -xz -C $HOME/tools/chainsaw'
+	sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/chainsaw_aarch64-20240713.tar.gz| tar -xz -C $HOME/tools/'
 	sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/timeliner_aarch64-20240717.tar.gz| tar -xz -C $HOME/tools/'
 	sudo -u ubuntu sh -c 'wget --no-check-certificate -qO-  https://github.com/ericchiang/pup/releases/download/v0.4.0/pup_v0.4.0_linux_arm64.zip |  bsdtar -xvf- -C $HOME/tools/pup/ && sudo ln -s $HOME/tools/pup/pup /usr/bin/pup && chmod 755 $HOME/tools/pup/pup'
 	sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/vt-cli_aarch64-20240720.tar.gz| tar -xz -C $HOME/tools/vt && sudo ln -s $HOME/tools/vt/vt /usr/bin/vt'
