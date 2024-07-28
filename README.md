@@ -156,9 +156,10 @@ PDF files, it can parse different versions of a file, object streams and encrypt
 * **flare-capa** - [Github Repository](https://github.com/mandiant/capa)
 	  - capa detects capabilities in executable files. You run it against a PE,
 	    ELF, .NET module, shellcode file, or a sandbox report
+```
 * **Elyzer** - [Github Repository](https://github.com/B0lg0r0v/Elyzer)
 	  - MIME / email headers parser
-
+```
 
 **Optional Tools**:
 -------------------

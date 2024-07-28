@@ -1,11 +1,12 @@
 ARCH=$(uname -m)
 
-sudo -u ubuntu sh -c 'echo"uname -m" > /home/ubuntu/banditlab.log'
+sudo -u ubuntu sh -c 'GetToolsSH" >> /home/ubuntu/banditlab.log'
+sudo -u ubuntu sh -c 'echo"uname -m" >> /home/ubuntu/banditlab.log'
 sudo -u ubuntu sh -c 'uname -m >> /home/ubuntu//banditlab.log'
 sudo -u ubuntu sh -c 'echo"ARCH Variable" >> /home/ubuntu/banditlab.log'
 sudo -u ubuntu sh -c 'echo"$ARCH" >> /home/ubuntu/banditlab.log'
 sudo -u ubuntu sh -c 'echo"lscpu" >> /home/ubuntu/banditlab.log'
-sudo -u ubuntu sh -c 'lscpu | grep Architecture | awk {'print $2'} >> /home/ubuntu/banditlab.log'
+sudo -u ubuntu sh -c 'lscpu | grep Architecture | awk {"print $2"} >> /home/ubuntu/banditlab.log'
 
 # Create Folder Structure
 for dir in DATA ewfmount evidence tools tools/hayabusa tools/memprocfs tools/trufflehog tools/noseyparker tools/pup tools/vt tools/nuclei; do
