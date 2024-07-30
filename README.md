@@ -46,6 +46,12 @@ Share folder between the VM and host system:
 multipass mount path/to/local/folder BanditLab:/home/ubuntu/DATA
 ```
 
+In order to see files in the macOS folder Full Disk access for Multipass is required.
+
+```
+System Preferences > Security & Privacy Preferences >  Full Disk Access 
+```
+
 Lab Help:
 ----------------
 Run the alias command to get a list of shortcuts for running the custom tools.
