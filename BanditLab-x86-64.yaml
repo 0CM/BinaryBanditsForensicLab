@@ -132,7 +132,7 @@ packages:
 
 
 runcmd:
- - sudo -u ubuntu sh -c 'https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/BanditLabGetTools_x86_64.sh | bash'
+ - sudo -u ubuntu sh -c 'curl -sL https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/BanditLabGetTools_x86_64.sh | bash'
  - sudo -u ubuntu sh -c 'git clone https://github.com/SigmaHQ/sigma $HOME/tools/chainsaw/sigma'
  - sudo -u ubuntu sh -c 'git clone https://github.com/CISOfy/lynis $HOME/tools/lynis'
  - sudo -u ubuntu python3 -m venv /home/ubuntu/pyapps
@@ -191,7 +191,7 @@ write_files:
         alias installazurecli="curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash"
         alias installgcloudcli="sudo snap install google-cloud-cli --classic"
         alias installgcloudsdk="sudo snap install google-cloud-sdk --classic"
-        alias installpwsh="sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/PowerShell/PowerShell/releases/download/v7.4.3/powershell-7.4.3-linux-arm64.tar.gz | tar -xz -C $HOME/tools/ --one-top-level=powershell && sudo ln -s $HOME/tools/powershell/pwsh /usr/bin/pwsh && chmod 755 $HOME/tools/powershell/pwsh'"
+        alias installpwsh="sudo -u ubuntu sh -c 'wget --no-check-certificate -qO- https://github.com/PowerShell/PowerShell/releases/download/v7.4.4/powershell-7.4.4-linux-musl-x64.tar.gz | tar -xz -C $HOME/tools/ --one-top-level=powershell && sudo ln -s $HOME/tools/powershell/pwsh /usr/bin/pwsh && chmod 755 $HOME/tools/powershell/pwsh'"
         
         
     append: true
