@@ -132,7 +132,7 @@ packages:
 
 
 runcmd:
- - curl -sL https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/BanditLabGetTools_AARCH64.sh | bash 
+ - sudo -u ubuntu sh -c 'curl -sL https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/BanditLabGetTools_AARCH64.sh | bash'
  - sudo -u ubuntu sh -c 'git clone https://github.com/SigmaHQ/sigma $HOME/tools/chainsaw/sigma'
  - sudo -u ubuntu sh -c 'git clone https://github.com/CISOfy/lynis $HOME/tools/lynis'
  - sudo -u ubuntu python3 -m venv /home/ubuntu/pyapps
