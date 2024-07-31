@@ -132,7 +132,7 @@ packages:
 
 
 runcmd:
- - curl -sL https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/BanditLabGetTools.sh | bash 
+ - curl -sL https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/BanditLabGetTools_AARCH64.sh | bash 
  - sudo -u ubuntu sh -c 'git clone https://github.com/SigmaHQ/sigma $HOME/tools/chainsaw/sigma'
  - sudo -u ubuntu sh -c 'git clone https://github.com/CISOfy/lynis $HOME/tools/lynis'
  - sudo -u ubuntu python3 -m venv /home/ubuntu/pyapps
@@ -144,15 +144,8 @@ runcmd:
  - sudo -u ubuntu sh -c 'git clone https://github.com/CISOfy/lynis $HOME/tools/lynis'
  - sudo -u ubuntu chmod 755 /home/ubuntu/pyapps/bin/hindsight.py
  - sudo -u ubuntu chmod 755 /home/ubuntu/pyapps/bin/hindsight_gui.py
- - sudo -u ubuntu sh -c 'CloudInit" > /home/ubuntu/banditlab.log'
- - sudo -u ubuntu sh -c 'echo"uname -m" > /home/ubuntu/banditlab.log'
- - sudo -u ubuntu sh -c 'uname -m >> /home/ubuntu//banditlab.log'
- - sudo -u ubuntu sh -c 'echo"ARCH Variable" >> /home/ubuntu/banditlab.log'
- - sudo -u ubuntu sh -c 'echo"$ARCH" >> /home/ubuntu/banditlab.log'
- - sudo -u ubuntu sh -c 'echo"lscpu" >> /home/ubuntu/banditlab.log'
- - sudo -u ubuntu sh -c 'lscpu | grep Architecture | awk {"print $2"} >> /home/ubuntu/banditlab.log'
- - sudo -u ubuntu sh -c 'CloudInit-END" > /home/ubuntu/banditlab.log'
-
+ - sudo -u ubuntu sh -c 'sudo snap install multipass-sshfs'
+ 
 write_files:
   - path: /home/ubuntu/.bashrc
     owner: ubuntu:ubuntu
