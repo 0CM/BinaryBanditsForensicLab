@@ -3,9 +3,9 @@ BanditLab - Ubuntu based Linux VM for Digital Forensics
 It was supposed to be a lightweight Linux distribution for digital forensics
 and incident response, but it kind of spiraled out of control.
 
-Primarily focused on the Apple Silicon or other ARM64 based systems.
+Primarily focused on the Apple Silicon and ARM64 based systems.
+The X86_64 architecture is now supported as well!
 
-* x86_64 binaries will be ported later.
 
 Prerequisites:
 ---------------
@@ -24,9 +24,23 @@ Lab Deployment:
 ----------------
 The following command will create a VM named BanditLab with 2GB of RAM and a 15GB disk. 
  - You can adjust the VM name and hardware specifications according to your preferences.
+
+Cloud-Init for the MacOS or ARM architecture: 
 ```
-multipass launch -n BanditLab -m 2GB -d 15G --cloud-init https://raw.githubusercontent.com/0CM/BinaryBanditsForensicLab/main/BanditLab.yaml
+
+multipass launch -n BanditLab -m 2GB -d 15G --cloud-init https://github.com/0CM/BinaryBanditsForensicLab/raw/main/BanditLab-aarm64.yaml
+
 ```
+
+Cloud-Init for the X86_64 architecture: 
+```
+
+multipass launch -n BanditLab -m 2GB -d 15G --cloud-init https://github.com/0CM/BinaryBanditsForensicLab/raw/main/BanditLab-x86-64.yaml
+
+```
+
+
+
 
 Log into the VM:
 ```
@@ -50,6 +64,18 @@ In order to see files in the macOS folder Full Disk access for Multipass is requ
 
 ```
 System Preferences > Security & Privacy Preferences >  Full Disk Access 
+```
+
+Alternatively you can copy files to and from the VM via transfer command
+
+Copy file  FROM the VM to a host machine
+```
+multipass transfer BanditLab:/home/ubuntu/evidence/MFT.csv ./
+```
+
+Copy file TO the VM from a host machine
+```
+multipass transfer  ./image.E01 BanditLab:/home/ubuntu/evidence
 ```
 
 Lab Help:
