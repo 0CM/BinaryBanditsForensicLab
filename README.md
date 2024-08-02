@@ -28,7 +28,7 @@ The following command will create a VM named BanditLab with 2GB of RAM and a 15G
 Cloud-Init for the MacOS or ARM architecture: 
 ```
 
-multipass launch -n BanditLab -m 2GB -d 15G --cloud-init https://github.com/0CM/BinaryBanditsForensicLab/raw/main/BanditLab-aarm64.yaml
+multipass launch -n BanditLab -m 2GB -d 15G --cloud-init https://github.com/0CM/BinaryBanditsForensicLab/raw/main/BanditLab-aarch64.yaml
 
 ```
 
