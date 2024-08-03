@@ -1,5 +1,5 @@
 # v1/BanditLab.yaml
-description: Digital Forensic Lab for DFIR practitioners, https://github.com/0CM/BinaryBanditsForensicLab
+description: Digital Forensic Lab for DFIR practitioners,  
 version: 1.0
 
 runs-on:
@@ -136,7 +136,6 @@ instances:
         - mblaze
         - mboxgrep
         - pev
-        - plaso
         - tshark
         - unar
         - tesseract-ocr

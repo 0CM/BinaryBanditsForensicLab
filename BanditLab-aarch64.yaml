@@ -115,7 +115,6 @@ packages:
   - mblaze
   - mboxgrep
   - pev
-  - plaso
   - tshark
   - unar
   - tesseract-ocr
@@ -129,6 +128,8 @@ packages:
   - apt-transport-https
   - parallel
   - nikto
+  - jq
+
 
 
 runcmd:
@@ -138,7 +139,7 @@ runcmd:
  - sudo -u ubuntu python3 -m venv /home/ubuntu/pyapps
  - sudo -u ubuntu python3 -m venv /home/ubuntu/pyflare
  - sudo -u ubuntu /home/ubuntu/pyflare/bin/python3 -m pip install flare-capa
- - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install peepdf-3 pdfid oletools pyhindsight browserexport windowsprefetch xlsxgrep tabulate dnspython wheel
+ - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install peepdf-3 pdfid oletools pyhindsight browserexport windowsprefetch xlsxgrep tabulate dnspython wheel plaso
  - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install https://github.com/msuhanov/dfir_ntfs/archive/1.1.18.tar.gz
  - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install git+https://github.com/cisagov/ioc-scanner.git
  - sudo -u ubuntu sh -c 'git clone https://github.com/CISOfy/lynis $HOME/tools/lynis'

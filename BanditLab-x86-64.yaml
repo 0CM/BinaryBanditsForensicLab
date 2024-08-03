@@ -115,7 +115,6 @@ packages:
   - mblaze
   - mboxgrep
   - pev
-  - plaso
   - tshark
   - unar
   - tesseract-ocr
@@ -129,6 +128,8 @@ packages:
   - apt-transport-https
   - parallel
   - nikto
+  - jq
+
 
 
 runcmd:
@@ -170,12 +171,6 @@ write_files:
         alias noseyparker="/home/ubuntu/tools/noseyparker/bin/noseyparker"
         alias trufflehog="/home/ubuntu/tools/trufflehog/trufflehog"
         alias timeliner="/home/ubuntu/tools/timeliner/timeliner"
-        alias log2timeline="/usr/bin/log2timeline.py"
-        alias pinfo="/usr/bin/pinfo.py"
-        alias image_export="/usr/bin/image_export.py"
-        alias pinfo="/usr/bin/pinfo.py"
-        alias psort="/usr/bin/psort.py"
-        alias psteal="/usr/bin/psteal.py"
         alias pyapps="source $HOME/pyapps/bin/activate"
         alias peepdf="source $HOME/pyapps/bin/activate&&peepdf"
         alias pdfid="source $HOME/pyapps/bin/activate&&pdfid"
