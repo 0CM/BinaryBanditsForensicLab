@@ -13,7 +13,7 @@ instances:
       min-cpu: 2       # the minimum number of CPUs this blueprint can work with
       min-mem: 2G    # the minimum amount of memory (can use G/K/M/B suffixes)
       min-disk: 15G   # and the minimum disk size (as above)
-    timeout: <int>         # maximum time for the instance to launch, and separately for cloud-init to complete
+    timeout: 1800         # maximum time for the instance to launch, and separately for cloud-init to complete
     cloud-init:
       vendor-data: |       # cloud-init vendor data
         apt:
