@@ -22,7 +22,7 @@ instances:
       vendor-data: |
         apt:
           sources:
-            docker:
+            dotnet_backports:
               source: |
                 deb [arch="arm64","amd64"] https://ppa.launchpadcontent.net/dotnet/backports/ubuntu/ $RELEASE main
               key: |
