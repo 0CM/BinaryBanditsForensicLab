@@ -103,54 +103,9 @@ instances:
                 =gsYm
                 -----END PGP PUBLIC KEY BLOCK-----
         packages:
-        - aeskeyfind
-        - afflib-tools
-        - binwalk
-        - getxattr
-        - cewl
-        - dc3dd
-        - dislocker
-        - dnsrecon
-        - ewf-tools
-        - exifprobe
-        - fcrackzip
-        - forensic-artifacts
-        - forensics-colorize
-        - galleta
-        - hashdeep
-        - pff-tools
-        - mc
-        - recoverdm
-        - scrounge-ntfs
-        - sleuthkit
-        - ssdeep
-        - wipe
-        - yara
-        - ext3grep
-        - libimage-exiftool-perl
-        - unblob
-        - binvis
-        - testdisk
-        - chntpw
-        - geoip-bin
-        - mblaze
-        - mboxgrep
-        - pev
-        - plaso
-        - tshark
         - unar
-        - tesseract-ocr
-        - libvshadow-utils
         - dotnet-runtime-6.0
-        - python3.12-venv
-        - python3-pip
-        - extundelete
         - libarchive-tools
-        - ugrep
-        - apt-transport-https
-        - parallel
-        - nikto
-        - jq
 
         snap:
           commands:
@@ -158,17 +113,6 @@ instances:
 
         runcmd:
         - sudo -u ubuntu sh -c 'curl -sL https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/BanditLabGetTools_aarch64.sh | bash'
-        - sudo -u ubuntu sh -c 'git clone https://github.com/SigmaHQ/sigma $HOME/tools/chainsaw/sigma'
-        - sudo -u ubuntu sh -c 'git clone https://github.com/CISOfy/lynis $HOME/tools/lynis'
-        - sudo -u ubuntu python3 -m venv /home/ubuntu/pyapps
-        - sudo -u ubuntu python3 -m venv /home/ubuntu/pyflare
-        - sudo -u ubuntu /home/ubuntu/pyflare/bin/python3 -m pip install flare-capa
-        - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install peepdf-3 pdfid oletools pyhindsight browserexport windowsprefetch xlsxgrep tabulate dnspython wheel
-        - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install https://github.com/msuhanov/dfir_ntfs/archive/1.1.18.tar.gz
-        - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install git+https://github.com/cisagov/ioc-scanner.git
-        - sudo -u ubuntu sh -c 'git clone https://github.com/CISOfy/lynis $HOME/tools/lynis'
-        - sudo -u ubuntu chmod 755 /home/ubuntu/pyapps/bin/hindsight.py
-        - sudo -u ubuntu chmod 755 /home/ubuntu/pyapps/bin/hindsight_gui.py
 
 
         write_files:
