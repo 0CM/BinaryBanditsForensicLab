@@ -8,7 +8,7 @@ runs-on:                   # a list of architectures this blueprint can run on
 
 instances:
   BanditLab:                  # * equal to the blueprint name
-    image: 24.04    # a valid image alias, see `multipass find` for available values
+    image: lts    # a valid image alias, see `multipass find` for available values
     limits:
       min-cpu: 2       # the minimum number of CPUs this blueprint can work with
       min-mem: 2G    # the minimum amount of memory (can use G/K/M/B suffixes)
