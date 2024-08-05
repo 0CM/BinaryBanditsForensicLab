@@ -188,6 +188,12 @@ PDF files, it can parse different versions of a file, object streams and encrypt
 * **flare-capa** - [Github Repository](https://github.com/mandiant/capa)
 	  - capa detects capabilities in executable files. You run it against a PE,
 	    ELF, .NET module, shellcode file, or a sandbox report
+* **DomainTools** - [Github Repository](https://github.com/DomainTools/python_api)
+	  - The DomainTools Python API Wrapper provides an interface to work with 
+	    cybersecurity and related data tools provided by the Iris Investigate.
+
+
+
 
 **Optional Tools**:
 -------------------
@@ -269,8 +275,6 @@ PDF files, it can parse different versions of a file, object streams and encrypt
 	  - grep through mailboxes
 * **pev**
 	  - text-based tool to analyze PE files
-* **plaso**
-	  - super timeline all the things 
 * **tshark**
 	  - network traffic analyzer - console version
 * **unar**
