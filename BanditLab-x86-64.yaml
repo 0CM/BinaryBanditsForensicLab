@@ -129,17 +129,21 @@ packages:
   - parallel
   - nikto
   - jq
+  - xmlstarlet
+  - attr
+  - poppler-utils
+  - xq
 
 
 
 runcmd:
- - sudo -u ubuntu sh -c 'curl -sL https://github.com/0CM/BinaryBanditsForensicLab/raw/main/packages/BanditLabGetTools_x86_64.sh | bash'
+ - sudo -u ubuntu sh -c 'curl -sL https://github.com/0CM/BanditLab/raw/main/packages/BanditLabGetTools_x86_64.sh | bash'
  - sudo -u ubuntu sh -c 'git clone https://github.com/SigmaHQ/sigma $HOME/tools/chainsaw/sigma'
  - sudo -u ubuntu sh -c 'git clone https://github.com/CISOfy/lynis $HOME/tools/lynis'
  - sudo -u ubuntu python3 -m venv /home/ubuntu/pyapps
  - sudo -u ubuntu python3 -m venv /home/ubuntu/pyflare
  - sudo -u ubuntu /home/ubuntu/pyflare/bin/python3 -m pip install flare-capa
- - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install peepdf-3 pdfid oletools pyhindsight browserexport windowsprefetch xlsxgrep tabulate dnspython wheel domaintools_api
+ - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install peepdf-3 pdfid oletools pyhindsight browserexport windowsprefetch xlsxgrep tabulate dnspython wheel domaintools_api evtxtract
  - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install https://github.com/msuhanov/dfir_ntfs/archive/1.1.18.tar.gz
  - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install git+https://github.com/cisagov/ioc-scanner.git
  - sudo -u ubuntu sh -c 'git clone https://github.com/CISOfy/lynis $HOME/tools/lynis'
