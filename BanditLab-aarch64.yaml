@@ -146,6 +146,7 @@ runcmd:
  - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install peepdf-3 pdfid oletools pyhindsight browserexport windowsprefetch xlsxgrep tabulate dnspython wheel domaintools_api evtxtract
  - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install https://github.com/msuhanov/dfir_ntfs/archive/1.1.18.tar.gz
  - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install git+https://github.com/cisagov/ioc-scanner.git
+ - sudo -u ubuntu /home/ubuntu/pyapps/bin/python3 -m pip install git+https://github.com/cclgroupltd/ccl_chromium_reader.git
  - sudo -u ubuntu sh -c 'git clone https://github.com/CISOfy/lynis $HOME/tools/lynis'
  - sudo -u ubuntu chmod 755 /home/ubuntu/pyapps/bin/hindsight.py
  - sudo -u ubuntu chmod 755 /home/ubuntu/pyapps/bin/hindsight_gui.py
